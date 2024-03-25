@@ -59,6 +59,16 @@
         font-weight: bold;
         color:#ffffff;
     }
+    .back{
+        background-color: red;
+        color: white;
+        padding: 10px 20px;
+        font-size: 30px;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+        text-decoration: none;
+    }
     </style>
 </head>
 <body>
@@ -100,6 +110,7 @@
                     </tr>
                 </table>
             </form>
+            <p><a class="back" href="{{route('home')}}">Kembali</a></p>
         </body>
         </div>
     </div>
