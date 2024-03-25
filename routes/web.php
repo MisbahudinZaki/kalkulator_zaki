@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\inputcontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('home', [inputcontroller::class, 'index'])->name('home');
+Route::get('/kalkulator', [inputcontroller::class, 'kalkulator'])->name('kalkulator');
+Route::post('count', [inputcontroller::class, 'input'])->name('count');
+Route::get('/kalkulatorjs', [inputcontroller::class, 'manual'])->name('kalkulatorjs');
